@@ -50,7 +50,7 @@
                     <div class="user_profle_side">
                         <div class="user_img"><img class="img-responsive" th:src="@{../template/images/layout_img/user_img.jpg}" alt="#" /></div>
                         <div class="user_info">
-                            <h6>John David</h6>
+                            <h6>David NDECKY</h6>
                             <p><span class="online_animation"></span> Online</p>
                         </div>
                     </div>
@@ -60,31 +60,24 @@
                 <h4>General</h4>
                 <ul class="list-unstyled components">
                     <li class="active">
-                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-dashboard yellow_color"></i> <span>Dashboard</span></a>
+                        <a href="#dashboard" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Utilisateurs</span></a>
                         <ul class="collapse list-unstyled" id="dashboard">
-                            <li>
-                                <a href="dashboard.html">> <span>Default Dashboard</span></a>
-                            </li>
-                            <li>
-                                <a href="dashboard_2.html">> <span>Dashboard style 2</span></a>
-                            </li>
+                            <li><a th:href="@{/users/users-list}">> <span>Liste des utilisateurs</span></a></li>
+                            <li><a th:href="@{/users/add-user}">> <span>Ajout utilisateurs</span></a></li>
                         </ul>
                     </li>
-                    <li><a href="widgets.html"><i class="fa fa-clock-o orange_color"></i> <span>Widgets</span></a></li>
+                    <li>
+                        <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Comptes</span></a>
+                        <ul class="collapse list-unstyled" id="apps">
+                            <li><a th:href="@{/comptes/comptes-list}">> <span>Liste des comptes</span></a></li>
+                            <li><a th:href="@{/comptes/add-compte}">> <span>Ajout comptes</span></a></li>
+                        </ul>
+                    </li>
                     <li>
                         <a href="#element" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-diamond purple_color"></i> <span>Clients</span></a>
                         <ul class="collapse list-unstyled" id="element">
                             <li><a th:href="@{/clients/list}">> <span>Liste des clients</span></a></li>
                             <li><a th:href="@{/clients/add}">> <span>Ajout de client</span></a></li>
-                        </ul>
-                    </li>
-                    <li><a href="tables.html"><i class="fa fa-table purple_color2"></i> <span>Tables</span></a></li>
-                    <li>
-                        <a href="#apps" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"><i class="fa fa-object-group blue2_color"></i> <span>Apps</span></a>
-                        <ul class="collapse list-unstyled" id="apps">
-                            <li><a href="email.html">> <span>Email</span></a></li>
-                            <li><a href="calendar.html">> <span>Calendar</span></a></li>
-                            <li><a href="media_gallery.html">> <span>Media Gallery</span></a></li>
                         </ul>
                     </li>
                     <li><a href="price.html"><i class="fa fa-briefcase blue1_color"></i> <span>Pricing Tables</span></a></li>
@@ -135,7 +128,7 @@
                                 </ul>
                                 <ul class="user_profile_dd">
                                     <li>
-                                        <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" th:src="@{../template/images/layout_img/user_img.jpg}" alt="#" /><span class="name_user">John David</span></a>
+                                        <a class="dropdown-toggle" data-toggle="dropdown"><img class="img-responsive rounded-circle" th:src="@{../template/images/layout_img/user_img.jpg}" alt="#" /><span class="name_user">David Ndecky</span></a>
                                         <div class="dropdown-menu">
                                             <a class="dropdown-item" href="profile.html">My Profile</a>
                                             <a class="dropdown-item" href="settings.html">Settings</a>
@@ -173,6 +166,7 @@
                                         <p class="total_no">2500</p>
                                         <p class="head_couter">Clients</p>
                                     </div>
+
                                 </div>
                             </div>
                         </div>
